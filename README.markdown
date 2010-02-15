@@ -12,9 +12,9 @@ software or participates in some user test.
 ## Motivation
 
 The ProcrasDoCoder Ring is meant to:
-*     be a conversation starter for my startup, [ProcrasDonate](http://procrasdonate.com)
-*     give the team a warm fuzzy feeling while we're working 
-*     be a fun introduction to microcontrollers
+ *     be a conversation starter for my startup, [ProcrasDonate](http://procrasdonate.com)
+ *     give the team a warm fuzzy feeling while we're working 
+ *     be a fun introduction to microcontrollers
 
 ## How It Works
 
@@ -60,12 +60,12 @@ from relevant examples.
 
 1. Edit app-conf.h so that WISERVER is defined:
 
-      //Here we include the header file for the application(s) we use in our project.
-      //#define APP_WEBSERVER
-      //#define APP_WEBCLIENT
-      //#define APP_SOCKAPP
-      //#define APP_UDPAPP
-      #define APP_WISERVER
+       //Here we include the header file for the application(s) we use in our project.
+       //#define APP_WEBSERVER
+       //#define APP_WEBCLIENT
+       //#define APP_SOCKAPP
+       //#define APP_UDPAPP
+       #define APP_WISERVER
 
 Delete any .o files and applet directories, if any (I never had any).
 
