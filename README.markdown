@@ -7,18 +7,20 @@ colorfully and brilliantly for a few seconds whenever a user of
 ProcrasDonate donates to a charity, makes a pledge, downloads our
 software or participates in some user test.
 
+<img src="http://github.com/diN0bot/ProcrasDoCoder/raw/master/docs/circuit2.JPG" width="25%" />
+
 ## Motivation
 
 The ProcrasDoCoder Ring is meant to:
-     * be a conversation starter for my startup, [ProcrasDonate](http://procrasdonate.com)
-     * give the team a warm fuzzy feeling while we're working 
-     * be a fun introduction to microcontrollers
+*     be a conversation starter for my startup, [ProcrasDonate](http://procrasdonate.com)
+*     give the team a warm fuzzy feeling while we're working 
+*     be a fun introduction to microcontrollers
 
 ## How It Works
 
 This is a simple mashup that stands on the shoulders of 4 giants:
 
-   Arduino + WiShield + BlinkM + ProcrasDonate web server
+    Arduino + WiShield + BlinkM + ProcrasDonate web server
 
 In case it's not clear: much of the WiShield and BlinkM code is copied
 from relevant examples.
@@ -27,9 +29,9 @@ from relevant examples.
 
 2. WiShield - from [AsyncLabs](http://asynclabs.com/wiki/index.php?title=WiShield_1.0)
 
-   Nice library. Needed to hack a few config lines in the C code for WEP
-   5 byte passcode (see section below), but otherwise comes with good
-   documentation.
+    Nice library. Needed to hack a few config lines in the C code for WEP
+    5 byte passcode (see section below), but otherwise comes with good
+    documentation.
 
 3. BlinkM - RGB LED kit from [ThingM](http://blinkm.thingm.com/)
 
@@ -58,12 +60,12 @@ from relevant examples.
 
 1. Edit app-conf.h so that WISERVER is defined:
 
-     //Here we include the header file for the application(s) we use in our project.
-     //#define APP_WEBSERVER
-     //#define APP_WEBCLIENT
-     //#define APP_SOCKAPP
-     //#define APP_UDPAPP
-     #define APP_WISERVER
+      //Here we include the header file for the application(s) we use in our project.
+      //#define APP_WEBSERVER
+      //#define APP_WEBCLIENT
+      //#define APP_SOCKAPP
+      //#define APP_UDPAPP
+      #define APP_WISERVER
 
 Delete any .o files and applet directories, if any (I never had any).
 
@@ -97,10 +99,10 @@ rather than a 1, when both are written in binary, can be
 changed. Essentially, the 192.168.1 are constant, and the last number can
 range from 0 to 255.
 
-     11000000.10101000.00000001.00000001
-     11111111.11111111.11111111.00000000
+     11000000.10101000.00000001.00000001  192.168.1.1 gateway ip in binary
+     11111111.11111111.11111111.00000000  255.255.255.0 subnet mask in binary
      -----------------------------------
-     11000000.10101000.00000001.xxxxxxxx
+     11000000.10101000.00000001.xxxxxxxx  x's can be 1 or 0, your choice
 
 ## Django app
 
@@ -108,16 +110,12 @@ This code base is actually a Django app sliced from the ProcrasDonate
 code base. You can learn more about ProcrasDonate-specific Django
 integration on [my blog](http://proudly.procrasdonate.com).
 
-## Feedback
-
-What do you think? Send me a message or email info@ProcrasDonate.com
-
 ## Hardware
 
-The three boards, from left to right, are Arduino, wifi shield,
-prototype shield with BlinkM, red debug LED and debug switch. They stack
-right on top of each other so that the Arduino's pins, like columns or
-pipes, pop through the layers.
+The three boards, from left to right, are Arduino, wifi shield and
+prototype shield with BlinkM, red debug LED and debug switch. The three
+boards stack right on top of each other so that the Arduino's pins, like
+columns, pop through the layers.
 
 <img src="http://github.com/diN0bot/ProcrasDoCoder/raw/master/docs/layers.JPG" width="25%" />
 
@@ -135,9 +133,13 @@ Close up of the top layer, the prototype shield.
  * The switch is plugged into Digital pin 6 across a 100 Ohm
       resistor, with a 10 KOhm pull-down resistor to ground.
 
-<img src="http://github.com/diN0bot/ProcrasDoCoder/raw/master/docs/circuits2.JPG" width="25%" />
+<img src="http://github.com/diN0bot/ProcrasDoCoder/raw/master/docs/circuit2.JPG" width="25%" />
 
 [This
 video](http://www.youtube.com/watch?v=yvCtAjzHpDE&feature=youtube_gdata)
 shows the out-of-the-box BlinkM fading sequence. I'll post an update
 once I make the proper ring and housing unit.
+
+## Feedback
+
+What do you think? Bugs, ideas, corrections?
