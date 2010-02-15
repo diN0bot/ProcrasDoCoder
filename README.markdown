@@ -111,3 +111,33 @@ integration on [my blog](http://proudly.procrasdonate.com).
 ## Feedback
 
 What do you think? Send me a message or email info@ProcrasDonate.com
+
+## Hardware
+
+The three boards, from left to right, are Arduino, wifi shield,
+prototype shield with BlinkM, red debug LED and debug switch. They stack
+right on top of each other so that the Arduino's pins, like columns or
+pipes, pop through the layers.
+
+<img src="http://github.com/diN0bot/ProcrasDoCoder/raw/master/docs/layers.JPG" width="25%" />
+
+Close up of the top layer, the prototype shield. 
+
+ *    The BlinkM is plugged directly into Analogue pins 2,3,4,5. This is
+      just for development. The real ring, or hat pin, will separate the
+      BlinkM across a few feet of wires.
+
+ *    The red LED is plugged into Digital pin 7 and a 1 KOhm resistor to ground.
+
+      It is used for debugging to show, for instance, when a successful
+      HTTP Reresponse is sent or received.
+
+ * The switch is plugged into Digital pin 6 across a 100 Ohm
+      resistor, with a 10 KOhm pull-down resistor to ground.
+
+<img src="http://github.com/diN0bot/ProcrasDoCoder/raw/master/docs/circuits2.JPG" width="25%" />
+
+[This
+video](http://www.youtube.com/watch?v=yvCtAjzHpDE&feature=youtube_gdata)
+shows the out-of-the-box BlinkM fading sequence. I'll post an update
+once I make the proper ring and housing unit.
