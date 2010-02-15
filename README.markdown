@@ -17,12 +17,6 @@ The ProcrasDoCoder Ring is meant to:
 *   give the team a warm fuzzy feeling while we're working 
 *   be a fun introduction to microcontrollers
 
-*   be a conversation starter for my startup, [ProcrasDonate](http://procrasdonate.com)
-
-*   give the team a warm fuzzy feeling while we're working 
-
-*   be a fun introduction to microcontrollers
-
 ## How It Works
 
 This is a simple mashup that stands on the shoulders of 4 giants:
